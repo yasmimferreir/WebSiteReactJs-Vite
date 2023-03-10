@@ -22,7 +22,7 @@ gap: 50px;
 
 
 const Logo = styled.img`
-height: 50px;
+height: 100px;
 `;
 
 const List = styled.ul`
@@ -40,7 +40,6 @@ display:flex;
 align-items: center;
 gap: 20px;
 `;
-
 
 const Icon = styled.img`
 width: 20px;
