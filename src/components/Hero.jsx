@@ -79,6 +79,14 @@ height: 600px;
 object-fit: contain;
 animation: animate 2s infinite ease alternate;
 
+
+@keyframes animate {
+  100%{
+    transform: translateY(20px);
+  }
+  
+}
+
 `;
 
 const Hero = () => {
