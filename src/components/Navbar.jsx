@@ -22,7 +22,7 @@ gap: 50px;
 
 
 const Logo = styled.img`
-height: 100px;
+height: 80px;
 `;
 
 const List = styled.ul`
@@ -49,7 +49,7 @@ cursor: pointer;
 const Button = styled.button`
 width: 100px;
 padding: 10px;
-background-color: #da4ea2;
+background-color: #ff6700;
 color: white;
 border: none;
 border-radius: 5px;
@@ -60,7 +60,7 @@ const Navbar = () => {
   return <Section>
     <Container>
         <Links>
-        <Logo src="./img/logo.png" alt="logo"/>
+        <Logo src="./img/logoX.png" alt="logo"/>
         <List>
             <ListItem>Home</ListItem>
             <ListItem>Studio</ListItem>

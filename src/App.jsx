@@ -12,6 +12,7 @@ const Container = styled.div`
  scrollbar-width: none;
  color: #fff;
  background: url(./img/bg.jpeg);
+ //background-color: #ff6700;
  &::-webkit-scrollbar{
   display: none;
  }

@@ -50,7 +50,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: #ff6700;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;

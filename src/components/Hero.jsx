@@ -44,7 +44,7 @@ height: 5px;
 `;
 
 const Subtitle = styled.h2`
-color: #da4ea2;
+color: #ff6700;
 `;
 
 const Desc = styled.p`
@@ -53,7 +53,7 @@ color: lightgray;
 `;
 
 const Button = styled.button`
-background-color: #da4ea2;
+background-color: #ff6700;
  color: white;
  font-weight: 500;
  width: 100px;
