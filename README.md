@@ -17,7 +17,14 @@ yarn create vite
 ⚔️ Utilização da ferramenta / ***Styled-components***:
 
 ```
-yarn addstyled-components
+yarn add styled-components
+```
+<br>
+
+⚔️ Utilização da ferramenta / ***React simple Maps***:
+
+```
+npm i -S react-simple-maps
 ```
 <br>
 
@@ -27,7 +34,7 @@ yarn addstyled-components
 🚀 Projeto 
 <br>
 
-<img src="https://user-images.githubusercontent.com/97356148/224412043-429070f0-7499-4e1d-ae43-f2b86379b994.png"> 
+<img src="https://user-images.githubusercontent.com/97356148/225414056-2d31d937-7ee4-4cdf-8cfe-4f714334a18d.png"> 
 <br>
 
 
