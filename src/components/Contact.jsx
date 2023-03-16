@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import Map from "./Map";
+//import React, { useRef } from 'react';c
+import emailjs from '@emailjs/browser';
 
 const Section = styled.div`
   height: 100vh;
@@ -75,23 +77,49 @@ const Right = styled.div`
   flex: 1;
 `;
 
+
 const Contact = () => {
+  const ref = useRef();
+  const [sucess, setSucess] = useState(null);
+
+  const hadleSubmit = (e) => {
+    e.preventDefault();
+  
+    emailjs
+      .sendForm(
+        "service_8nw4wcb",
+        "template_2cqj2vs",
+        ref.current,
+        "QuG-93sjbNCR_B3DZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSucess(true)
+        },
+        (error) => {
+          console.log(error.text);
+          setSucess(false)
+        }
+      );
+  };
+  
   return (
     <Section>
       <Container>
         <Left>
-          <Form>
+          <Form ref={ref} onSubmit={hadleSubmit}>
             <Title>Contact us</Title>
-            <Input placeholder="Name" />
-            <Input placeholder="E-mail" />
-            <TextArea placeholder="white your message" rows={7}/>
-            <Button>send</Button>
+            <Input placeholder="Name" name="name"/>
+            <Input placeholder="E-mail" name="email"/>
+            <TextArea placeholder="white your message" rows={7}  name="message"/>
+            <Button type="submit">send</Button>
+            {sucess && "message Sucess"}
           </Form>
         </Left>
 
- <Map/>
         <Right>
-        
+          <Map />
         </Right>
       </Container>
     </Section>
