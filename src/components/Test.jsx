@@ -22,7 +22,6 @@ const Test = () => {
             </Canvas>
         </Contaier>
     )
-
 }
 
 export default Test;
