@@ -78,22 +78,22 @@ const Right = styled.div`
 `;
 
 const Works = () => {
-const [work, setWork] = useState("web design")
+  const [work, setWork] = useState("web design")
 
   return (
     <Section>
       <Container>
         <Left>
           <List>
-            {data.map((item) => (
-              <ListItem key={item} text={item} onClick={() => setWork(item)}>
-                {item}
+            { data.map((item) => (
+              <ListItem key={ item } text={ item } onClick={ () => setWork(item) }>
+                { item }
               </ListItem>
-            ))}
+            )) }
           </List>
         </Left>
         <Right>
-           { work === "web design" ? (<WebDesign/>) : work === "Developer" ? (<Developer/>) : work === "Product Design" ? (<ProductDesign/> ) }
+          { work === "web design" ? (<WebDesign />) : work === "Developer" ? (<Developer />) : (<ProductDesign />) }
         </Right>
       </Container>
     </Section>
