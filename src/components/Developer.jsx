@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const WebDesign = () => {
+const Developer = () => {
     return(
         <div>
             Developer
@@ -9,4 +9,4 @@ const WebDesign = () => {
     )
 }
 
-export default WebDesign;
+export default Developer;
